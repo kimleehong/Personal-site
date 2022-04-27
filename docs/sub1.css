@@ -11,7 +11,7 @@ html>body {
 
 .top_bar_menu {
     top: 54px;
-    left: 865px;
+    left: 900px;
     z-index: 9999;
 }
 
@@ -20,8 +20,8 @@ html>body {
     display: flex;
 }
 
-.top_bar_menu>li:hover {
-    color: #f4ecd3;
+.top_bar_menu li:hover>a {
+    color: #FFF7BC;
     transition: 0.3s linear;
 }
 
@@ -7427,4 +7427,99 @@ html>body {
     width: 1920px;
     height: 1210px;
     overflow: hidden;
+}
+
+/* menu-2 */
+label .menu {
+    position: absolute;
+    left: 1470px;
+    top: -104px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #F1DAC7;
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 20px #eee;
+}
+
+label .hamburger {
+    position: absolute;
+    top: 116px;
+    left: 50px;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out;
+    background-color: #FF8667;
+}
+
+label .hamburger:after,
+label .hamburger:before {
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+label .hamburger:before {
+    top: -10px;
+    background-color: #FF8667;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+    background-color: #FF8667;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked+.menu {
+    box-shadow: none;
+    background-color: #FF8667;
+    height: 560px;
+    width: 301px;
+    border-radius: 0;
+}
+
+label input:checked+.menu .hamburger {
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+label input:checked+.menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0px;
+    background-color: white;
+}
+
+label input:checked+.menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0px;
+}
+
+label input:checked+.menu+ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 100px;
+    left: 1520px;
+    opacity: 0;
+    transition: .25s 0s ease-in-out;
+    color: white;
+}
+
+.top_bar_menu .ham {
+    left: calc(50% - 740px);
 }
