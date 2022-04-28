@@ -56,13 +56,39 @@ html>body {
 }
 
 .main_bg>.about_text_4 {
-    top: 3637px;
+    top: 4022px;
+}
+
+.main_bg>.about_ex {
     left: 280px;
+    top: 3101px;
+}
+
+.lion>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 20px;
+    position: absolute;
+    width: 400px;
+    height: 70px;
+    left: 1239px;
+    top: 3438px;
+    border: 3px solid #9C8983;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lion:hover>a {
+    background: #9C8983;
+    color: white;
+    font-weight: 600;
 }
 
 .main_bg>.pf {
-    top: 4335px;
-    left: 748px;
+    left: 747px;
+    top: 3744px;
     width: 426px;
     height: 131px;
     font-size: 40px;
@@ -83,6 +109,7 @@ html>body {
 
 .btn:hover {
     background-position: right center;
+    color: orangered;
 }
 
 .btn-1 {
