@@ -62,7 +62,141 @@ html>body {
 .main_bg>.about_ex {
     left: 280px;
     top: 3101px;
+    display: flex;
+    gap: 62px;
 }
+
+.main_bg>.about_ex>.about_ex_1>a>img{
+    z-index: -1;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.main_bg>.about_ex>.about_ex_1:hover>a>img{
+    transform: scale(1.1);
+}
+
+.main_bg>.about_ex>.about_ex_1>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_bg>.about_ex>.about_ex_1>a::after {
+    transform: scaley(0);
+    transform-origin: top right;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(1, 19, 27);
+    opacity: .5;
+    z-index: 2;
+    transition: transform .3s ease;
+}
+
+.main_bg>.about_ex>.about_ex_1>a::before{
+    content: "asldkfmalskdmflaskmdflkasmd;flkmas;dlkfm;aslkdmf;alskmdf";
+    border: 2px solid white;
+    color: white;
+    padding: 7px 7px 4px 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 3;
+    width: 260px;
+    height: 380px;
+}
+
+.main_bg>.about_ex>.about_ex_1>a:hover::before{
+    opacity: 1;
+}
+
+.main_bg>.about_ex>.about_ex_1>a:hover::after {
+    transform: scaley(1);
+    transform-origin: top left;
+}
+
+.main_bg>.about_ex>.about_ex_2>a>img{
+    z-index: -1;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.main_bg>.about_ex>.about_ex_2:hover>a>img{
+    transform: scale(1.1);
+}
+
+.main_bg>.about_ex>.about_ex_2>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_bg>.about_ex>.about_ex_2>a::after {
+    transform: scaley(0);
+    transform-origin: top right;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(1, 19, 27);
+    opacity: .5;
+    z-index: 2;
+    transition: transform .3s ease;
+}
+
+.main_bg>.about_ex>.about_ex_2>a:hover::after {
+    transform: scaley(1);
+    transform-origin: top left;
+}
+
+.main_bg>.about_ex>.about_ex_3>a>img{
+    z-index: -1;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.main_bg>.about_ex>.about_ex_3:hover>a>img{
+    transform: scale(1.1);
+}
+
+.main_bg>.about_ex>.about_ex_3>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_bg>.about_ex>.about_ex_3>a::after {
+    transform: scaley(0);
+    transform-origin: top right;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(1, 19, 27);
+    opacity: .5;
+    z-index: 2;
+    transition: transform .3s ease;
+}
+
+.main_bg>.about_ex>.about_ex_3>a:hover::after {
+    transform: scaley(1);
+    transform-origin: top left;
+}
+
 
 .lion>a {
     display: flex;
