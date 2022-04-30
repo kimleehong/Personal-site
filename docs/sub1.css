@@ -66,23 +66,35 @@ html>body {
     gap: 62px;
 }
 
-.main_bg>.about_ex>.about_ex_1>a>img{
+.main_bg>.about_ex>.about_ex_1>a>img,
+.main_bg>.about_ex>.about_ex_2>a>img,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(1)>img,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(2)>img {
     z-index: -1;
     position: relative;
     transition: transform 0.3s;
 }
 
-.main_bg>.about_ex>.about_ex_1:hover>a>img{
+.main_bg>.about_ex>.about_ex_1>a:hover>img,
+.main_bg>.about_ex>.about_ex_2>a:hover>img,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(1):hover>img,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(2):hover>img {
     transform: scale(1.1);
 }
 
-.main_bg>.about_ex>.about_ex_1>a {
+.main_bg>.about_ex>.about_ex_1>a,
+.main_bg>.about_ex>.about_ex_2>a,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(1),
+.main_bg>.about_ex>.about_ex_3>a:nth-child(2) {
     display: block;
     position: relative;
     overflow: hidden;
 }
 
-.main_bg>.about_ex>.about_ex_1>a::after {
+.main_bg>.about_ex>.about_ex_1>a::after,
+.main_bg>.about_ex>.about_ex_2>a::after,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(1)::after,
+.main_bg>.about_ex>.about_ex_3>a:nth-child(2)::after {
     transform: scaley(0);
     transform-origin: top right;
     content: " ";
@@ -98,11 +110,11 @@ html>body {
     transition: transform .3s ease;
 }
 
-.main_bg>.about_ex>.about_ex_1>a::before{
-    content: "asldkfmalskdmflaskmdflkasmd;flkmas;dlkfm;aslkdmf;alskmdf";
+.main_bg>.about_ex>.about_ex_1>a::before {
+    content: "연극 포스터 모작입니다.";
     border: 2px solid white;
     color: white;
-    padding: 7px 7px 4px 7px;
+    padding: 4px 44px 4px 44px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,91 +124,88 @@ html>body {
     z-index: 3;
     width: 260px;
     height: 380px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    font-weight: 400;
 }
 
-.main_bg>.about_ex>.about_ex_1>a:hover::before{
+.main_bg>.about_ex>.about_ex_2>a::before {
+    content: "드라마 포스터 창작입니다.";
+    border: 2px solid white;
+    color: white;
+    padding: 4px 40px 4px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 3;
+    width: 260px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    font-weight: 400;
+}
+
+.main_bg>.about_ex>.about_ex_3>a:nth-child(1)::before {
+    content: "그래픽아트웍 모작입니다.";
+    border: 2px solid white;
+    color: white;
+    padding: 4px 34px 4px 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 3;
+    width: 260px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main_bg>.about_ex>.about_ex_3>a:nth-child(2)::before {
+    content: "로고디자인 창작입니다.";
+    border: 2px solid white;
+    color: white;
+    padding: 4px 40px 4px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 3;
+    width: 260px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main_bg>.about_ex>.about_ex_1>a:hover::before,
+.main_bg>.about_ex>.about_ex_2>a:hover::before,
+.main_bg>.about_ex>.about_ex_3>a:hover:nth-child(1)::before,
+.main_bg>.about_ex>.about_ex_3>a:hover:nth-child(2)::before {
     opacity: 1;
 }
 
-.main_bg>.about_ex>.about_ex_1>a:hover::after {
+.main_bg>.about_ex>.about_ex_1>a:hover::after,
+.main_bg>.about_ex>.about_ex_2>a:hover::after,
+.main_bg>.about_ex>.about_ex_3>a:hover:nth-child(1)::after,
+.main_bg>.about_ex>.about_ex_3>a:hover:nth-child(2)::after {
     transform: scaley(1);
     transform-origin: top left;
 }
-
-.main_bg>.about_ex>.about_ex_2>a>img{
-    z-index: -1;
-    position: relative;
-    transition: transform 0.3s;
-}
-
-.main_bg>.about_ex>.about_ex_2:hover>a>img{
-    transform: scale(1.1);
-}
-
-.main_bg>.about_ex>.about_ex_2>a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.main_bg>.about_ex>.about_ex_2>a::after {
-    transform: scaley(0);
-    transform-origin: top right;
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgb(1, 19, 27);
-    opacity: .5;
-    z-index: 2;
-    transition: transform .3s ease;
-}
-
-.main_bg>.about_ex>.about_ex_2>a:hover::after {
-    transform: scaley(1);
-    transform-origin: top left;
-}
-
-.main_bg>.about_ex>.about_ex_3>a>img{
-    z-index: -1;
-    position: relative;
-    transition: transform 0.3s;
-}
-
-.main_bg>.about_ex>.about_ex_3:hover>a>img{
-    transform: scale(1.1);
-}
-
-.main_bg>.about_ex>.about_ex_3>a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.main_bg>.about_ex>.about_ex_3>a::after {
-    transform: scaley(0);
-    transform-origin: top right;
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgb(1, 19, 27);
-    opacity: .5;
-    z-index: 2;
-    transition: transform .3s ease;
-}
-
-.main_bg>.about_ex>.about_ex_3>a:hover::after {
-    transform: scaley(1);
-    transform-origin: top left;
-}
-
 
 .lion>a {
     display: flex;
